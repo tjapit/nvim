@@ -46,3 +46,5 @@ vim.keymap.set("n", "<C-k>", "d$a <Del><ESC>")
 vim.keymap.set("i", "<C-b>", "<left>")
 vim.keymap.set("i", "<C-f>", "<right>")
 
+-- go back and forth between definitions
+vim.keymap.set("n", "gb", "<C-^>")
