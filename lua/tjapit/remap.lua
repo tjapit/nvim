@@ -28,6 +28,8 @@ vim.keymap.set("i", "<C-c>", "<ESC>")
 -- end and beginning of line
 vim.keymap.set("n", "H", "^")
 vim.keymap.set("n", "L", "$")
+vim.keymap.set("v", "H", "^")
+vim.keymap.set("v", "L", "$")
 
 -- undotree and harpoon conflict
 --vim.keymap.set("n", "<C-m>", "<C-w>")
