@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/Users/timothy.timothy/.local/share/nvim/site/pack/packer/start/cyberpunk.nvim",
     url = "https://github.com/samueljoli/cyberpunk.nvim"
   },
+  ["emmet-vim"] = {
+    loaded = true,
+    path = "/Users/timothy.timothy/.local/share/nvim/site/pack/packer/start/emmet-vim",
+    url = "https://github.com/mattn/emmet-vim"
+  },
   harpoon = {
     loaded = true,
     path = "/Users/timothy.timothy/.local/share/nvim/site/pack/packer/start/harpoon",

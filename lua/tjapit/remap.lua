@@ -1,5 +1,6 @@
 -- back to netrw
 vim.g.mapleader = " "
+vim.g.user_emmet_leader_key = ","
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 -- move line down/up

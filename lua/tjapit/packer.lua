@@ -21,10 +21,12 @@ return require('packer').startup(function(use)
   }
 
   use {'nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' }}
-  use {'nvim-treesitter/playground'}
-  use {'theprimeagen/harpoon'}
-  use {'mbbill/undotree'}
-  use {'tpope/vim-fugitive'}
+  use 'nvim-treesitter/playground'
+  use 'theprimeagen/harpoon'
+  use 'mbbill/undotree'
+  use 'tpope/vim-fugitive'
+  use 'theprimeagen/vim-be-good'
+  use 'mattn/emmet-vim'
 
   use {
       'VonHeikemen/lsp-zero.nvim',
@@ -46,5 +48,4 @@ return require('packer').startup(function(use)
       {'L3MON4D3/LuaSnip'},     -- Required
     }
   }
-  use {'theprimeagen/vim-be-good'}
 end)
