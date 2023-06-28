@@ -1,7 +1,12 @@
--- back to netrw
+-- map leaders
 vim.g.mapleader = " "
 vim.g.user_emmet_leader_key = ","
+
+-- back to netrw
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+
+-- terminal
+vim.keymap.set("n", "<leader>tr", ":terminal<CR>a")
 
 -- move line down/up
 vim.keymap.set("n", "∆", ":m +1<CR>")

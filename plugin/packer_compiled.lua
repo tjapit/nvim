@@ -104,6 +104,11 @@ _G.packer_plugins = {
     path = "/Users/timothy.timothy/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
     url = "https://github.com/VonHeikemen/lsp-zero.nvim"
   },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "/Users/timothy.timothy/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
     path = "/Users/timothy.timothy/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
@@ -169,6 +174,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/timothy.timothy/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-prettier"] = {
+    loaded = true,
+    path = "/Users/timothy.timothy/.local/share/nvim/site/pack/packer/start/vim-prettier",
+    url = "https://github.com/prettier/vim-prettier"
   }
 }
 
