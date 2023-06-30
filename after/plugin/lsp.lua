@@ -8,6 +8,18 @@ lsp.ensure_installed({
     'rust_analyzer',
     'lua_ls',
 })
+--
+-- Fix Undefined global 'vim'
+lsp.configure('lua_ls', {
+    settings = {
+        Lua = {
+            diagnostics = {
+                globals = { 'vim' }
+            }
+        }
+    }
+})
+
 
 local cmp = require('cmp')
 local cmp_select = { behavior = cmp.SelectBehavior.Select }
@@ -34,3 +46,4 @@ lsp.on_attach(function(client, bfnr)
 end)
 
 lsp.setup()
+
