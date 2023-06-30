@@ -31,6 +31,8 @@ return require('packer').startup(function(use)
   use 'theprimeagen/vim-be-good'
   use 'mattn/emmet-vim'
   use 'nvim-lualine/lualine.nvim'
+  use 'nvim-tree/nvim-tree.lua'
+  use 'nvim-tree/nvim-web-devicons'
 
   use {
     'prettier/vim-prettier',
