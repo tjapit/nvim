@@ -1,5 +1,3 @@
-vim.keymap.set("n", "<leader>pf", ":Prettier<CR>")
-
 local function setDefaultPrettierOptions()
   vim.g['prettier#exec_cmd_path'] = '/Users/timothy.timothy/.nvm/versions/node/v18.16.0/bin/prettier'
   vim.g["prettier#config#options"] = {
