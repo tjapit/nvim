@@ -21,7 +21,7 @@ return require('packer').startup(function(use)
   }
 
   use {
-      'nvim-treesitter/nvim-treesitter', 
+      'nvim-treesitter/nvim-treesitter',
       { run = ':TSUpdate' },
   }
   use 'nvim-treesitter/playground'
@@ -33,6 +33,7 @@ return require('packer').startup(function(use)
   use 'nvim-lualine/lualine.nvim'
   use 'nvim-tree/nvim-tree.lua'
   use 'nvim-tree/nvim-web-devicons'
+  use 'apzelos/blamer.nvim'
 
   use {
     'prettier/vim-prettier',
