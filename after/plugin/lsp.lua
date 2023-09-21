@@ -1,6 +1,6 @@
-local lsp = require('lsp-zero')
+local lsp_zero = require('lsp-zero')
 
-lsp.preset('recommended')
+lsp_zero.preset('recommended')
 
 require('mason').setup()
 require('mason-lspconfig').setup({
@@ -12,15 +12,21 @@ require('mason-lspconfig').setup({
     'pyright',
   },
   handlers = {
-    lsp.default_setup,
+    lsp_zero.default_setup,
     lua_ls = function()
-      local lua_opts = lsp.nvim_lua_ls()
+      local lua_opts = lsp_zero.nvim_lua_ls()
       require('lspconfig').lua_ls.setup(lua_opts)
     end,
   }
 })
+require('mason-tool-installer').setup({
+  ensure_installed = {
+    'black',
+    'debugpy',
+  }
+})
 
-lsp.setup_servers({
+lsp_zero.setup_servers({
     'tsserver',
     'eslint',
     'rust_analyzer',
@@ -29,7 +35,7 @@ lsp.setup_servers({
 })
 --
 -- Fix Undefined global 'vim'
-lsp.configure('lua_ls', {
+lsp_zero.configure('lua_ls', {
     settings = {
         Lua = {
             diagnostics = {
@@ -58,7 +64,7 @@ cmp.setup({
   })
 })
 
-lsp.on_attach(function(client, bufnr)
+lsp_zero.on_attach(function(client, bufnr)
     local opts = {buffer = bufnr, remap = false}
 
     vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
@@ -68,5 +74,5 @@ lsp.on_attach(function(client, bufnr)
 end)
 
 
-lsp.setup()
+lsp_zero.setup()
 
