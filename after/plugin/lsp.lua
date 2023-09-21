@@ -2,14 +2,14 @@ local lsp = require('lsp-zero')
 
 lsp.preset('recommended')
 
-require('mason').setup({})
+require('mason').setup()
 require('mason-lspconfig').setup({
   ensure_installed = {
     'tsserver',
     'eslint',
     'rust_analyzer',
     'lua_ls',
-    'pyright'
+    'pyright',
   },
   handlers = {
     lsp.default_setup,
@@ -25,7 +25,7 @@ lsp.setup_servers({
     'eslint',
     'rust_analyzer',
     'lua_ls',
-    'pyright'
+    'pyright',
 })
 --
 -- Fix Undefined global 'vim'

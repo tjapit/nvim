@@ -64,4 +64,8 @@ return require('packer').startup(function(use)
       {'L3MON4D3/LuaSnip'},     -- Required
     }
   }
+  use {
+    'jose-elias-alvarez/null-ls.nvim',
+    requires = { "nvim-lua/plenary.nvim" },
+  }
 end)
