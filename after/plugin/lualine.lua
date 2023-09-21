@@ -4,14 +4,15 @@ if (not status) then return end
 lualine.setup {
   options = {
     icons_enabled = true,
-    theme = 'horizon',
-    section_separators = { left = '', right = '' },
+    theme = 'dracula',
+    section_separators = { left = '', right = '' },
     component_separators = { left = '', right = '' },
     disabled_filetypes = {}
   },
   sections = {
     lualine_a = {
-      { 'mode', separator = { left = '' }, right_padding = 2 },
+      { 'mode' },
+      --{ 'mode', separator = { left = '' }, right_padding = 2 },
     },
     lualine_b = { 'branch' },
     lualine_c = { {
@@ -27,7 +28,8 @@ lualine.setup {
     },
     lualine_y = { },--'progress' },
     lualine_z = {
-      { 'location', separator = { right = '' }, left_padding = 2 },
+      { 'location' },
+      --{ 'location', separator = { right = '' }, left_padding = 2 },
     },
   },
   inactive_sections = {
