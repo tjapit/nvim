@@ -57,6 +57,7 @@ return require('packer').startup(function(use)
           end,
       },
       {'williamboman/mason-lspconfig.nvim'}, -- Optional
+      {'WhoIsSethDaniel/mason-tool-installer.nvim'},
 
       -- Autocompletion
       {'hrsh7th/nvim-cmp'},     -- Required
@@ -67,5 +68,17 @@ return require('packer').startup(function(use)
   use {
     'jose-elias-alvarez/null-ls.nvim',
     requires = { "nvim-lua/plenary.nvim" },
+  }
+  use { 'mfussenegger/nvim-dap' }
+  use {
+    'rcarriga/nvim-dap-ui',
+    requires = { 'mfussenegger/nvim-dap' },
+  }
+  use {
+    'mfussenegger/nvim-dap-python',
+    requires = {
+      'mfussnegger/nvim-dap',
+      'rcarriga/nvim-dap-ui',
+    }
   }
 end)
