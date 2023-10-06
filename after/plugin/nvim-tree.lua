@@ -9,6 +9,9 @@ require("nvim-tree").setup({
     ignore = false,
     timeout = 500,
   },
+  view = {
+    preserve_window_proportions = true,
+  }
 })
 
 vim.keymap.set("n", "<leader>e", vim.cmd.NvimTreeToggle)
