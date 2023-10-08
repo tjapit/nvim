@@ -11,7 +11,14 @@ return require('packer').startup(function(use)
 	  -- or                            , branch = '0.1.x',
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
-  use 'samueljoli/cyberpunk.nvim'
+
+  -- THEMES
+  use {
+    'catppuccin/nvim',
+    as = 'catppuccin'
+  }
+  --use 'samueljoli/cyberpunk.nvim'
+  --
   --use {
 	--  'rose-pine/neovim',
 	--  as = 'rose-pine',
@@ -80,5 +87,9 @@ return require('packer').startup(function(use)
       'mfussnegger/nvim-dap',
       'rcarriga/nvim-dap-ui',
     }
+  }
+  use {
+    'christoomey/vim-tmux-navigator',
+    lazy = false,
   }
 end)
