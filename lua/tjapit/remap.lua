@@ -48,7 +48,7 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("i", "<C-d>", "<Del>")
 vim.keymap.set("i", "<C-h>", "<BS>")
 --vim.keymap.set("n", "<C-h>", "i<BS><right><ESC>")
-vim.keymap.set("n", "<C-k>", "d$a <Del><ESC>")
+--vim.keymap.set("n", "<C-k>", "d$a <Del><ESC>")
 
 -- navigating in insert mode
 vim.keymap.set("i", "<C-b>", "<left>")
@@ -57,8 +57,3 @@ vim.keymap.set("i", "<C-f>", "<right>")
 -- go back and forth between definitions
 vim.keymap.set("n", "gb", "<C-^>")
 
--- move between tmux windows
-vim.keymap.set("n", "<C-h>", ":TmuxNavigateLeft<CR>")
-vim.keymap.set("n", "<C-l>", ":TmuxNavigateRight<CR>")
-vim.keymap.set("n", "<C-j>", ":TmuxNavigateDown<CR>")
-vim.keymap.set("n", "<C-k>", ":TmuxNavigateUp<CR>")
