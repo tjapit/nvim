@@ -16,6 +16,10 @@ vim.keymap.set("n", "˚", ":m -2<CR>")
 vim.keymap.set("v", "∆", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "˚", ":m '<-2<CR>gv=gv")
 
+-- increment/decrement in visual block
+vim.keymap.set("v", "<C-a>", "<C-a>gv")
+vim.keymap.set("v", "<C-x>", "<C-x>gv")
+
 -- auto-pair
 vim.keymap.set("i", "\"", "\"\"<left>")
 vim.keymap.set("i", "\'", "\'\'<left>")
