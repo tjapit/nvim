@@ -8,7 +8,7 @@ require('telescope').setup({
   defaults = {
     hidden = true,
     file_ignore_patterns = {
-      "node_modules", "build", "dist", "yarn.lock"
+      "node_modules", "build", "dist", "yarn.lock", "venv", "vscode"
     }
   },
   pickers = {
