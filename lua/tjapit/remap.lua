@@ -20,6 +20,10 @@ vim.keymap.set("v", "˚", ":m '<-2<CR>gv=gv")
 vim.keymap.set("v", "<C-a>", "<C-a>gv")
 vim.keymap.set("v", "<C-x>", "<C-x>gv")
 
+-- indent/de-indent in visual mode
+vim.keymap.set("v", "<", "<gv")
+vim.keymap.set("v", ">", ">gv")
+
 -- auto-pair
 vim.keymap.set("i", "\"", "\"\"<left>")
 vim.keymap.set("i", "\'", "\'\'<left>")
